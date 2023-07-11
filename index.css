@@ -1,0 +1,344 @@
+/*Body styling, adding a simple background image.*/
+
+
+
+body {
+    background-image: url("images/OPG.jpg");
+    background-size: cover; 
+  }
+  
+  /*Headings in the webpage that has 3 different stylings.*/
+
+
+
+  
+  /*The first h1 and and 4th, which is color white, I also added a costumized font family.*/
+
+
+
+  .head {
+      color: white;
+      font-family: Akira;
+      line-height: 1px;
+  }
+  
+  /*The 2nd h1 and and 5th, which is color black, with a red outline.*/
+
+
+
+  .mid {
+      color: black;
+      font-family: Akira;
+      line-height: 1px;
+      -webkit-text-stroke: 1px rgb(255, 0, 0);
+  }
+  
+  /*The 3nd h1 and and 6th, which is color black, but with a white outline.*/
+
+
+
+  .last {
+      color: black;
+      font-family: Akira;
+      line-height: 1px;
+      -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+  
+  /*Div styling for all the headings.*/
+
+
+
+  .headings {
+      margin-top: 5rem;
+      font-size: 2rem;
+      text-align: center;
+  }
+  
+  /*A costumized font that I donwloaded from the web.*/
+
+
+
+  @font-face {
+    font-family: Akira;
+    src: url(Akira.otf);
+  }
+  
+  /*Navbar links styling*/
+
+
+
+  nav a {
+      text-decoration: none;
+      color: white;
+      width: 170px; /*Navbar size*/
+      display: block;
+      font-family: Akira;
+      text-align: center;
+  }
+  
+  /*list styling*/
+
+
+
+
+  li{
+      float: left;
+      margin: 2rem;
+      margin-top: 3rem;
+      list-style: none;
+  }
+  
+  /*header styling*/
+
+
+
+
+  header{
+      display: flex;
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+  }
+  
+  /*Hover effects for navbar links*/
+
+
+
+  nav a:hover{
+    color: red;
+  }
+  
+  /*Link styling, for all links in the webpage*/
+
+
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  /*Hover for links*/
+
+
+
+  a:hover{
+    color: white;
+  }
+  
+  /*To make navbar and footer max width.*/
+
+
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*To make the list inside the list display in block.*/
+
+
+
+  .dropdown{
+    display: block ;
+   }
+  
+   /*<making the dropdown its styling*/
+
+
+
+  .dropdown{
+    width: 100%; 
+    position: absolute;
+    list-style: none;
+    display: none;
+  }
+  
+  /*Hover effects for drop down menu.*/
+
+
+
+
+  ul li:hover ul.dropdown{
+    display: block;
+  }
+  
+  /*Dropdown styling*/
+
+
+
+
+  ul{
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  /*dropdown styling for list*/
+
+
+
+
+  ul li{
+    position: relative;
+  }
+  
+  /*list inside the shop syling*/
+
+
+
+
+  .drop{
+  margin: 0;
+  padding: 5px;
+  }
+  
+  /*botton styling for shop now*/
+
+
+
+
+  .button_one{
+      margin-top: 3rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      margin-left: 60px;
+  }
+  
+  /*Hover effects*/
+
+
+
+
+  button:hover{
+    background-color: black;
+  }
+  
+  
+  /*Animation for headings*/
+
+
+
+
+  h1, .button_one, nav{
+      transform: scale(0.94);
+      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    }
+    
+    @keyframes scale {
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    span {
+      display: inline-block;
+      opacity: 0;
+      filter: blur(4px);
+      margin-top: 2rem;
+    }
+    
+    span:nth-child(1) {
+      animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(2) {
+      animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(3) {
+      animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(4) {
+      animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(5) {
+      animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    span:nth-child(6) {
+      animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    }
+    
+    @keyframes fade-in {
+      100% {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+  /**Animations up to here/
+
+
+
+  
+  /*footer*/
+
+
+
+
+    .main_div {
+      display: flex;
+  }
+  
+  /*All columns in equal sizes*/
+
+
+
+  .left, .midl, .mid-two, .right {
+    flex: 25%;
+  }
+  
+  /*footer styling*/
+
+
+
+  footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    font-family: monospace;
+    font-size: large;
+    position:relative;
+    text-align: justify;
+    line-height: 25px;
+  }
+  
+  /*Copyright styling*/
+
+
+
+
+  .copyright{
+    font-family: monospace;
+    text-align: center;
+    background-color: rgb(3, 3, 3);
+    padding: 2rem;
+  }
+  
+  /*Logo in the footer*/
+
+
+
+  .logo-footer{
+    height:150px;
+    width:150px ;
+    margin-left: 55px;
+  }
+  
+  /*Links in the footer color*/
+
+
+
+  .footer-link{
+    color: white;
+  }
+  
+  /*Hover for links*/
+
+
+  
+  .footer-link:hover{
+    color: rgb(255, 0, 0);
+  }
