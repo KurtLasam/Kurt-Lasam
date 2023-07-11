@@ -1,0 +1,504 @@
+/*CSS for all the pages, except the homepage*/
+
+/*Using own fonts*/
+@font-face {
+  font-family: Stay;
+  src: url(Stay.otf);
+}
+
+/*Navbar styling, explained in Homepage.CSS*/
+nav a {
+    text-decoration: none;
+    color: white;
+    width: 170px; /*Navbar size*/
+    display: block;
+    font-family: Stay;
+    text-align: center;
+}
+
+li{
+    float: left;
+    margin: 2rem;
+    margin-top: 3rem;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+nav a:hover{
+  color: red;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown{
+  display: block ;
+ }
+
+.dropdown{
+  width: 100%; 
+  position: absolute;
+  list-style: none;
+  display: none;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+ul{
+  list-style: none;
+  background-color: rgb(0, 0, 0);
+}
+
+ul li{
+  position: relative;
+}
+
+.drop{
+margin: 0;
+padding: 5px;
+}
+/*Up to here was the navbar stling*/
+
+
+/*Images, for all the product image will have this format.*/
+.products{
+    height: 18rem;
+    width: 18rem ;
+    margin: 20px;
+    margin-left: 25px;
+}
+
+/*footer, explained in the Homepage.CSS*/
+  .main_div {
+    display: flex;
+}
+
+.left, .midl, .mid-two, .right {
+  flex: 25%;
+}
+
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 2rem;
+  font-family:monospace;
+  font-size: large;
+  position:relative;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.copyright{
+  font-family: monospace;
+  text-align: center;
+  background-color: rgb(3, 3, 3);
+  padding: 2rem;
+}
+
+.logo-footer{
+  height:150px;
+  width:150px ;
+  margin-left: 55px;
+}
+
+.footer-link{
+  color: white;
+}
+
+.footer-link:hover{
+  color: rgb(255, 0, 0);
+}
+
+/*About page, which has a change in font, something more chill.*/
+.about{
+  font-family: Stay;
+  font-size: 20px;
+}
+
+/*The heading in the about.html styling*/
+.about-head{
+  font-size: xx-large;
+  font-family: Stay;
+}
+
+/*The main body of the about.html page, with its margin and padding.*/
+.about-body{
+  margin: 2rem;
+  padding: 3rem;
+}
+
+/*Downloaded fonts*/
+@font-face {
+  font-family: Stay;
+  src: url(Stay.otf);
+}
+
+/*Downloaded fonts*/
+@font-face {
+  font-family: Stay;
+  src: url(Stay.otf);
+}
+
+/*Contact page styling*/
+.contact-main{
+  font-family: Stay;
+  margin: 2rem;
+  padding: 3rem;
+  font-size: large;
+}
+
+/*Heading in contacts.html styling*/
+.heading-contact{
+  font-family: Stay;
+  text-align: center;
+  margin-bottom: 2rem ;
+}
+
+/*Paragraph styling in contacts.html*/
+.p-contact{
+  margin-bottom: 2rem ;
+  font-size: larger;
+}
+
+/*Input stylling for the user inputs*/
+input[type=text]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: Stay;
+  font-size: larger;
+}
+
+/*text area styling*/
+textarea{
+  font-family: Stay;
+  font-size: larger;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/*Label styling*/
+label{
+  font-size: larger;
+  font-family: Stay;
+}
+
+/*Button in contact.html*/
+.button_two{
+  margin-top: 1rem;
+  font-family: Stay;
+  font-size: 2rem;
+  padding: 1rem;
+  transform: translateX(230%);
+}
+
+/*Hover effects for button two*/
+.button_two:hover{
+  background-color: black;
+  color: white;
+}
+
+/*Submit.html styling*/
+.ty{
+  font-family: Stay;
+  text-align: center;
+  padding: 10rem;
+}
+
+/*Costumers.html styling*/
+
+/*photo*/
+.port{
+  width: 355px;
+  height: 555px;
+  margin: 1rem;
+  margin-left: 60px;
+  filter: grayscale();
+}
+
+/*photo hover*/
+.port:hover{
+  filter: none;
+  transition:ease;
+}
+
+/*Heading styling in costumer.html*/
+.costumer-heading{
+  text-align: center;
+  font-family: Stay;
+  margin-top: 3rem;
+  animation: none;
+}
+
+/*Shirts hover image, with image id.*/
+#american:hover{
+  content: url("Images/Shirts/american\ back.jpg");
+}
+
+#Atlantis:hover{
+  content: url("Images/Shirts/Atlantis\ back.jpg");
+}
+
+#Bagram:hover{
+  content: url("Images/Shirts/Bagram\ back.jpg");
+}
+
+#Beartooth:hover{
+  content: url("Images/Shirts/Beartooth\ back.jpg");
+}
+
+#beatless:hover{
+  content: url("Images/Shirts/beatles\ flat.jpg");
+}
+
+#beer-cafe:hover{
+  content: url("Images/Shirts/beer\ cafe\ back.jpg");
+}
+
+#beer:hover{
+  content: url("Images/Shirts/beer\ flat.jpg");
+}
+
+#Brownie:hover{
+  content: url("Images/Shirts/Brownie\ black.jpg");
+}
+
+#canon:hover{
+  content: url("Images/Shirts/canon\ flat.jpg");
+}
+
+#eagle:hover{
+  content: url("Images/Shirts/eagle\ back.jpg");
+}
+
+#eric:hover{
+  content: url("Images/Shirts/Eric\ back.jpg");
+}
+
+#fatboy:hover{
+  content: url("Images/Shirts/fatboy\ back.jpg");
+}
+
+#fish:hover{
+  content: url("Images/Shirts/fish\ back.jpg");
+}
+
+#freddy:hover{
+  content: url("Images/Shirts/freddy\ back.jpg");
+}
+
+#golf:hover{
+  content: url("Images/Shirts/golf\ back.jpg");
+}
+
+#guitar:hover{
+  content: url("Images/Shirts/guitar\ flat.jpg");
+}
+#guns:hover{
+  content: url("Images/Shirts/Guns\ flat.jpg");
+}
+
+#hit-miss:hover{
+  content: url("Images/Shirts/hit\ miss\ back.jpg");
+}
+
+#Hottuna:hover{
+  content: url("Images/Shirts/Hot\ tuna\ back.jpg");
+}
+
+#iron-house:hover{
+  content: url("Images/Shirts/iron\ house\ back.jpg");
+}
+
+#journey:hover{
+  content: url("Images/Shirts/journey\ flat.jpg");
+}
+
+#kasabian:hover{
+  content: url("Images/Shirts/kasabian\ back.jpg");
+}
+
+#kiss:hover{
+  content: url("Images/Shirts/kiss\ back.jpg");
+}
+
+#led:hover{
+  content: url("Images/Shirts/led\ flat.jpg");
+}
+
+#maito:hover{
+  content: url("Images/Shirts/maito\ back.jpg");
+}
+
+#meadow:hover{
+  content: url("Images/Shirts/meadow\ back.jpg");
+}
+
+#Metallica:hover{
+  content: url("Images/Shirts/Metallica.jpg");
+}
+
+#nirvana:hover{
+  content: url("Images/Shirts/nirvana\ back.jpg");
+}
+
+#ohio:hover{
+  content: url("Images/Shirts/ohio\ back.jpg");
+}
+
+#pinkfloyd:hover{
+  content: url("Images/Shirts/pink\ floyd\ flat.jpg");
+}
+
+#pizza:hover{
+  content: url("Images/Shirts/Pizza\ back.jpg");
+}
+
+#racing:hover{
+  content: url("Images/Shirts/\/racing\ back.jpg");
+}
+
+#rockn:hover{
+  content: url("Images/Shirts/rock\ and\ roll\ back.jpg");
+}
+
+#seven:hover{
+  content: url("Images/Shirts/seven\ back.jpg");
+}
+
+#sunday:hover{
+  content: url("Images/Shirts/sunday\ back.jpg");
+}
+
+#telefun:hover{
+  content: url("Images/Shirts/telefun\ back.jpg");
+}
+
+#tie-dye:hover{
+  content: url("Images/Shirts/tie\ dye\ back.jpg");
+}
+
+#union:hover{
+  content: url("Images/Shirts/union\ back.jpg");
+}
+/*End of shirts*/
+
+/*Shorts hover image, with image id.*/
+#q:hover{
+  content: url("Images/shorts/Black-one.jpg");
+}
+
+#w:hover{
+  content: url("Images/shorts/chekered-one.jpg");
+}
+
+#e:hover{
+  content: url("Images/shorts/green-one.jpg");
+}
+
+#r:hover{
+  content: url("Images/shorts/maroon-one.jpg");
+}
+
+#t:hover{
+  content: url("Images/shorts/nike-one.jpg");
+}
+
+#y:hover{
+  content: url("Images/shorts/strips-one.jpg");
+}
+
+#u:hover{
+  content: url("Images/shorts/yellow-one.jpg");
+}
+
+#i:hover{
+  content: url("Images/shorts/white-one.jpg");
+}
+/*End of Shorts*/
+
+/*All products reduce opacity when hovered.*/
+.products:hover{
+  filter: opacity(70%);
+
+}
+
+/*Jacket hover image, with image id.*/
+
+#a:hover{
+  content: url("Images/jacket/big\ jacket\ rev.jpg");
+}
+
+#s:hover{
+  content: url("Images/jacket/cookies\ hoop\ one.jpg");
+}
+
+#d:hover{
+  content: url("Images/jacket/long\ back.jpg");
+}
+/*End of jackets.*/
+
+/*Order.html page styling*/
+.order-main{
+  padding: 5rem;
+}
+
+/*Heading in order.html styling.*/
+.heading-order{
+  font-family: Stay;
+}
+
+/*order.html paragraph*/
+.p-order{
+  font-family: Stay;
+  font-size: larger;
+}
+
+/*Button in order.html styling*/
+.button_three{
+  margin-top: 1rem;
+  font-family: Stay;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/*Hover effects in button 3*/
+.button_three:hover{
+  background-color: black;
+}
+
+/*Animation for different elements*/
+h2, p, form, textarea, .port{
+  transform: scale(0.94);
+  animation: scale 2s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
